@@ -17,29 +17,6 @@ const getSeoData = async () => {
       waitUntil: "networkidle2",
     });
 
-    // scrap title
-    // const title = await page.title();
-    // console.log(`Title : ${title}`);
-
-    //scrap description
-    // const metaDescription = await page.$('meta[name="description"]');
-
-    // if (metaDescription) {
-    //   const descriptionContent = await page.evaluate(
-    //     (element) => element.getAttribute("content"),
-    //     metaDescription
-    //   );
-    //   console.log("Meta Description:", descriptionContent);
-    // } else {
-    //   console.log("No meta description found on the page.");
-    // }
-
-    // const metaDescription = await page.evaluate(() => {
-    //     const description = document.querySelector('meta[name="description"]')?.textContent || "No Description";
-    //     return description;
-    // })
-
-    // await page.waitForSelector("title");
 
     //select and scrap metaData
     const metaData = await page.evaluate(() => {
